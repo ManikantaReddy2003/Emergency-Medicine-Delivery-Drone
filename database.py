@@ -3,7 +3,7 @@ import firebase_admin
 from firebase_admin import db,credentials
 # authenticate to firebase
 cred = credentials.Certificate("credentials.json")
-firebase_admin.initialize_app(cred, {"databaseURL": "https://drone-430bb-default-rtdb.asia-southeast1.firebasedatabase.app/"})
+firebase_admin.initialize_app(cred, {"databaseURL": "https://emdd-3eb34-default-rtdb.firebaseio.com/"})
 
 ref = db.reference("/")
 # retrieving data from root node
